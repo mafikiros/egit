@@ -3,8 +3,10 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
  xsi:schemaLocation="http://www.springframework.org/schema/beans
          http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
-  
+  <bean id="lmodel" class="com.user.loginModel">
+  </bean>
   <bean id="loginController" class="com.user.loginController">
+  <property name="lmodel" ref="lmodel"></property>
   </bean>
   
    <bean id="urlmpng" class="org.springframework.web.servlet.handler.SimpleUrlHandleMapping">       

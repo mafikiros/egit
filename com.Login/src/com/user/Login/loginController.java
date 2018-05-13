@@ -10,6 +10,11 @@ public class loginController implements Controller {
 	
 	LoginModel lmodel;
 	
+	public void setLmodel(LoginModel lmodel) {
+		this.lmodel = lmodel;
+	}
+
+
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		String login=req.getParameter("login");
